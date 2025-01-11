@@ -1,0 +1,15 @@
+ .sidebar-container {
+     height: 100%;
+     padding-top: 2vh;
+     margin-bottom: 2vh;
+ }
+
+ p {
+     margin: 0;
+ }
+
+ @media (max-width: 600px) {
+    .sidebar-container{
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+.image {
+    padding-top: 1vh;
+    width: 20vmin;
+    height: 20vmin;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    min-width: 300px;
+}
+
+.title {
+    font-size:  1vw;
+    padding: 0.5vh;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #6b6e7087;
+    padding: 1vh;
+    font-weight: 400;
+}

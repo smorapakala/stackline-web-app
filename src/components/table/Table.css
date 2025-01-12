@@ -1,0 +1,10 @@
+.text {
+    color: #6b6e7087;
+}
+
+.table-container {
+    width: 100%;
+    display: block;
+    margin-top: 5vh;
+    padding-bottom: 2vh;
+}

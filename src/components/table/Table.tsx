@@ -75,7 +75,7 @@ export const SalesTable: React.FC = () => {
                 onPageChange={handleChangePage}
                 rowsPerPage={rowsPerPage}
                 onRowsPerPageChange={handleChangeRowsPerPage}
-                rowsPerPageOptions={[5, 10, 25]}
+                rowsPerPageOptions={[5, 10]}
               />
       </TableContainer>
     </div>

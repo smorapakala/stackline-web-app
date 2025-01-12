@@ -13,9 +13,7 @@ const Chart: React.FC = () => {
 
     const groupedData = useMemo(() => {
         const groupedByMonth = sales?.reduce((acc, sale) => {
-            const date = new Date(sale.weekEnding);
-            const monthNumber = date.getMonth();
-
+            const monthNumber = parseInt(sale.weekEnding.split('-')[1], 10) - 1; 
             if (!acc[monthNumber]) {
                 acc[monthNumber] = { retailSales: 0, wholesaleSales: 0 };
             }
@@ -25,7 +23,6 @@ const Chart: React.FC = () => {
         }, {});
 
         const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
         return groupedByMonth
             ? Object.entries(groupedByMonth)?.map(([month, data]) => ({
                 month: monthNames[month].toUpperCase(),
